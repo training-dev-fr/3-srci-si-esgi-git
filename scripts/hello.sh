@@ -4,4 +4,3 @@ echo "Machine: $(hostname)"
 echo "System : $(uname)"
 echo "Date : $(date)"
 echo "Programme terminé"
-exit 1
