@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "training-dev-fr/3-srci-si-esgi-git",
+  "pipelineDirectory": "3-srci-si-esgi-git",
+  "workspaceDirectory": "3-srci-si-esgi-git\\3-srci-si-esgi-git",
+  "repositories": {
+    "training-dev-fr/3-srci-si-esgi-git": {
+      "repositoryPath": "3-srci-si-esgi-git\\3-srci-si-esgi-git",
+      "lastRunOn": "11/09/2026 16:23:47 +01:00"
+    }
+  },
+  "lastRunOn": "11/09/2026 16:37:49 +01:00"
+}

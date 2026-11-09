@@ -17,4 +17,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Déployer
-        run: scp -r ./scripts aurelien@10.213.32.226:/var/www/git
+        run: scp -r ./scripts aurelien@vm-debian:/var/www/git
