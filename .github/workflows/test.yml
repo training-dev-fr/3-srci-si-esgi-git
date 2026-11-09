@@ -24,3 +24,8 @@ jobs:
 
       - name: Terminé
         run: echo "Workflow terminé !"
+
+      - name: Test un secret
+        env:
+          IP: ${{ secrets.IP_SERVER }}
+        run: ssh "$IP"
