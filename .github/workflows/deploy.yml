@@ -1,0 +1,20 @@
+name: Déploiement
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  deploy:
+    if: github.even.pull_request.merged == true
+    runs-on: self-hosted
+
+    steps:
+      - name: Récupérer le dépot
+        uses: actions/checkout@v4
+
+      - name: Déployer
+        run: scp -r ./scripts aurelien@10.213.32.226:/var/www/git
