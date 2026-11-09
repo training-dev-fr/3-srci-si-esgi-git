@@ -1,0 +1,21 @@
+name: Premier workflow
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépot
+        uses: actions/checkout@v4
+
+      - name: Executer un script 
+        run: bash scripts/hello.sh
+
+      - name: Terminé
+        run: echo "Workflow terminé !"
